@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 14px;
 }
@@ -6,6 +12,8 @@ body {
     font-style: italic;
     color: green;
     font-size: 1.5em;
+
+    border: 1px dotted red;
 }
 
 .text {
@@ -20,4 +28,43 @@ body {
     font-weight: bold;
     text-decoration: underline;
     letter-spacing: 0.5em;
+}
+
+.text2 .marked {
+    background-color: pink;
+}
+
+ol {
+    list-style-type: none;
+    list-style-position: inside;
+    counter-reset: number;
+    color: black;
+    border: 1px solid red;
+    width: 350px;
+    padding: 1em 5em 2em 5em;
+    margin: 2em auto;
+}
+ol li::before {
+    content: counter(number) ')';
+    counter-increment: number;
+}
+
+#red {
+    color: red;
+}
+
+#orange {
+    color: orange;
+}
+
+#coral {
+    color: coral;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#darkorange {
+    color: darkorange;
 }
