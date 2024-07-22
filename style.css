@@ -8,6 +8,11 @@ body {
     font-size: 14px;
 }
 
+.container {
+    width: 90%;
+    margin: auto;
+}
+
 .heading {
     font-style: italic;
     color: green;
@@ -41,8 +46,14 @@ ol {
     color: black;
     border: 1px solid red;
     width: 350px;
+    height: 250px;
     padding: 1em 5em 2em 5em;
     margin: 2em auto;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/00/98/87/05/1000_F_98870522_isCR5iXt7TCCzrXqb5fPi4LLt5zqIPBq.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    
 }
 ol li::before {
     content: counter(number) ')';
@@ -68,3 +79,27 @@ ol li::before {
 #darkorange {
     color: darkorange;
 }
+
+.cat-img {
+    width: 200px;
+    float: right;
+
+}
+.cat-img2 {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+a {
+    color: coral;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+}
+
